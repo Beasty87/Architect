@@ -1,0 +1,168 @@
+     /*MAIN*/
+
+#main {
+	/*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+	min-height: calc(100vh - 100px - 140px);*/
+}	 
+body, html {
+	height: 100vh;
+}
+body {
+	margin: 0;
+}
+@media only screen and (min-width: 768px) {
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 7.5fr 1.5fr;
+	height: 100vh;
+	margin: 2em;
+	grid-template-areas:
+	"header header header"
+	"main   main   main"
+	"footer footer footer";
+    }
+.content {
+	border: 1px solid black;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+	grid-template-rows:1fr 1fr;
+	
+}
+
+footer {
+	display: grid;
+	border: 2px solid black;
+	grid-template-columns: 100%;
+	grid-template-rows: 2fr 2fr 1fr;
+	grid-area: footer;
+	grid-template-areas:
+	"f"
+	"c"
+	"b";
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 7.5fr 1.5fr;
+	height: 100vh;
+	margin: 2em;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+}
+
+  /*LOFT*/
+
+main {
+	display:grid;
+	grid-area: main;
+	
+}
+.container-main  {
+	display: grid;
+	
+}
+.content {
+	border: 1px solid black;
+	height: 100%;
+	display: grid;
+	grid-template-columns 100%; 
+	grid-template-rows:1fr;
+	
+}	
+.content div {
+	display: grid;
+	margin: 10px;
+}
+      /*HEADER*/
+  
+header {
+	background-color: grey;
+	text-align: center;
+	width: 100%;
+	grid-area: header;
+	/*position: fixed;
+	z-index: 999; */
+}
+#nav-bar {
+	display: grid;
+	grid-template-columns: 1rem;
+	min-height: 100px;
+	grid-auto-flow: column;
+	grid-gap: 25px;
+}
+
+#logo {
+	display: grid;
+	align-content: center;
+	
+}	  
+#links {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-auto-flow: column;
+	grid-gap: 30px;
+	font-size: 25px;
+	
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+       /*FOOTER*/
+	   
+footer {
+	display: grid;
+	border: 2px solid black;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 120px 20px;
+	grid-area: footer;
+	grid-template-areas:
+	"f l c"
+	"b b b";	
+}
+.follow-footer {
+	display: grid;
+	border: 2px solid black;
+	grid-area: f;
+	justify-content: center;
+	align-content: start;
+	grid-gap: 1rem;
+}
+.follow-footer ul li a {
+	text-decoration: none;
+}
+.follow-footer ul li {
+	list-style: none;
+}
+.follow-footer ul {
+	display:grid;
+	grid-gap: 0.5rem;
+}
+.contact-footer {
+	display: grid;
+	border: 2px solid black;
+	grid-area: c;
+	justify-content: center;
+	align-content: start;
+	
+}
+.logo-text {
+	display: grid;
+	border: 2px solid black;
+	grid-area: l;
+	justify-content: center;
+	align-content: center;
+}
+.copyright {
+	display: grid;
+	border: 2px solid black;
+	grid-area: b;
+	justify-content: center;
+	font-weight: bold;
+}
